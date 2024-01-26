@@ -1,10 +1,10 @@
-package com.example;
+package com.tomcat.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BlockingApiApplicationTests {
+class TomcatExampleApplicationTests {
 
     @Test
     void contextLoads() {
