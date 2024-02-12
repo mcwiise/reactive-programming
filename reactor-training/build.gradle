@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.reactor.training'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform('io.projectreactor:reactor-bom:2020.0.9')
+    implementation 'io.projectreactor:reactor-core'
+}
