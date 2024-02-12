@@ -15,7 +15,7 @@
 
 ### The Project Reactor Training
 
-From intellij import `reactor-training` project, where you will find the following packages which a bunch reactor examples to execute:
+From intellij import `reactor-training` project, where you will find the following packages which a bunch reactor examples to execute, please execute them in the same order as below:
 
 - `com.reactor.training.monos`:
-- `com.reactor.training.monos`:
+- `com.reactor.training.fliuxes`:
