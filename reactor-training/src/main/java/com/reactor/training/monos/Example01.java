@@ -1,4 +1,4 @@
-package t;
+package com.reactor.training.monos;
 
 import com.reactor.training.monos.MySubscriber;
 import reactor.core.publisher.Mono;
