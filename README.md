@@ -1,11 +1,11 @@
 # Reactive Programming Workshop
 
-### Tomcat Vs Netty Comparison
+### Tomcat Vs Netty
 
 1. Make sure to install the following tools:
    - JDK 17
    - Intellij Ultimate Edition
-   - Jmeter ([for mac users](https://formulae.brew.sh/formula/jmeter))
+   - Jmeter ([just for mac users](https://formulae.brew.sh/formula/jmeter))
 2. From intellij:
    - import `tomcat-example` project and start it in profile mode ![intellij profile mode](/img/profile-mode.png)
    - import `netty-example` project and start it in profile mode ![intellij profile mode](/img/profile-mode.png)
@@ -15,7 +15,17 @@
 
 ### The Project Reactor Training
 
-From intellij import `reactor-training` project, where you will find the following packages which a bunch reactor examples to execute, please execute them in the same order as below:
+From intellij import `reactor-training` project, and check the following packages with reactive examples:
 
-- `com.reactor.training.monos`:
-- `com.reactor.training.fliuxes`:
+- `com.reactor.training.monos`
+- `com.reactor.training.fliuxes`
+
+### Webflux Example
+
+1. Install [docker](https://www.docker.com/products/docker-desktop/)
+2. Import the project in intellij
+3. From the project root folder, execute the following command
+
+   `docker-compose up -d --build`
+
+4. Start the application
