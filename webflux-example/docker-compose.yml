@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  postgres14:
+    image: bitnami/postgresql:14
+    container_name: postgres14
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=admin
+      - POSTGRESQL_PASSWORD=admin
+      - POSTGRESQL_DATABASE=mydb
+    networks:
+      - default
+networks:
+  default:
+    name: stamper.local

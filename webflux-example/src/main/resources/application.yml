@@ -1,0 +1,13 @@
+server:
+  port: 1984
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/mydb
+    username: admin
+    password: admin
+  flyway:
+    url: jdbc:postgresql://localhost:5432/mydb
+    schemas: public
+    user: admin
+    password: admin

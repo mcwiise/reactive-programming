@@ -12,14 +12,6 @@ public class NoBlockingApi {
 
     @GetMapping(value = "/no-blocking")
     public Mono<ResponseEntity<String>> noBlocking(){
-        return Mono.just(ResponseEntity.ok("done")).subscribeOn(Schedulers.boundedElastic());
-    }
-
-    private static void sleep(){
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        return Mono.just(ResponseEntity.ok("done"));
     }
 }
