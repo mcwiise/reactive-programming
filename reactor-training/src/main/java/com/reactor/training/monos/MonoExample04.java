@@ -6,6 +6,8 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 /**
+ * We have seen how to create simple publishers, now lets see how we can
+ * create publishers in a programmatic way.
  * Subscription to a publisher that emits 1 item in a programmatic way,
  * Subscription to a publisher that emits a FAILURE signal in a programmatic way,
  *
@@ -21,13 +23,12 @@ public class MonoExample04 {
     }
 
     /**
-     * Creates a publisher that emits an item,
+     * Creates a publisher that emits an item followed by a SUCCESS signal,
      * by using the Callable functional interface.
      * */
     public static void monoWithCallableOnComplete(){
         var fooUserCallable = new UsersCallable("FOO");
-        var monoPublisher = Mono.fromCallable(fooUserCallable)
-                .publishOn(Schedulers.boundedElastic());
+        var monoPublisher = Mono.fromCallable(fooUserCallable);
         var mySubscriber = new MySubscriber();
         monoPublisher.subscribe(mySubscriber);
     }

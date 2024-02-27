@@ -12,6 +12,4 @@ repositories {
 dependencies {
     implementation platform('io.projectreactor:reactor-bom:2020.0.9')
     implementation 'io.projectreactor:reactor-core'
-    compile 'org.springframework.boot:spring-boot-starter-webflux'
-
 }
